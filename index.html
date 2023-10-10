@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 7 </title>
+</head>
+<body>
+<!-- chpater 46 and 47 ( Events)-->
+    <!-- q1 -->
+    <button id="myButton">Click me!</button>
+    <br>
+    <br>
+    <!-- q2 -->
+    <button onclick="showMessage()">Click Me!</button>
+    <br>
+    <br>
+    <!-- q3 -->
+    <!-- Link with hover effect -->
+<a href="#" onmouseover="changeColorOnHover()" onmouseout="restoreOriginalColor()">Hover over me</a>
+<br>
+ <br>
+
+ <!-- q4 -->
+<!-- Link to scroll to the top -->
+<a href="#" onclick="scrollToTop()">Scroll to Top</a>
+
+<!-- q5 -->
+
+<br>
+<br>
+<!-- q6 -->
+<a href="#" id="openWindowLink">Open New Window</a>
+<br>
+<br>
+
+<!-- q7 -->
+<button id="my_Button">Click me!</button>
+
+<br>
+<br>
+<!-- q8 -->
+<a href="#" onmouseover="changeColorOnHover()" onmouseout="restoreOriginalColor()">Hover over me</a>
+
+<!-- q9 -->
+
+
+<br>
+<br>
+<!-- q10 -->
+<button id="Button">Click me!</button>
+<!-- q11 -->
+<div id="myElement" style="width: 100px; height: 100px; background-color: lightblue;">Mouse over me!</div>
+
+<!-- q12 -->
+<a href="#" onclick="openWindow();">Open Window</a>
+<br>
+<br>
+<!-- chaptr 49 and 50 (Reading and setting field values)-->
+<!-- q1 -->
+<label for="userInput">Enter something: </label>
+    <input type="text" id="userInput">
+    <button onclick="printInputValue()">Print to Console</button>
+<br>
+<br>
+
+    <!-- q2 -->
+    <label for="myCheckbox">Check this box:</label>
+    <input type="checkbox" id="myCheckbox">
+    <button onclick="printCheckboxValue()">Print to Console</button>
+    <br>
+    <br>
+
+    <!-- q3 -->
+    <label for="mySelect">Choose an option:</label>
+    <select id="mySelect">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+    <button onclick="printSelectValue()">Print to 
+
+        <br>
+        <br>
+
+        <!-- q4 -->
+        <input type="text" id="myTextField">
+    <button onclick="setTextInField()">Set Text</button>
+    <br>
+    <br>
+
+    <!-- q5 -->
+      <label for="maritalStatus">Are you married?</label>
+    <input type="checkbox" id="maritalStatus">
+    <button onclick="setStatus()">Set Status</button>
+    <input type="text" id="status">
+
+    <br>
+    <br>
+    <!-- q6 -->
+    <input type="text" id="myInput">
+    <button onclick="fillInput()">Fill Input</button>
+
+    <br>
+    <br>
+
+    <!-- q7 -->
+    <h2>Registration Form</h2>
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <span id="nameError" class="error"></span><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <span id="emailError" class="error"></span><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <span id="passwordError" class="error"></span><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
